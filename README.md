@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# 📘 School Vaccination Portal – FSAD Assignment 2024–25
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application to manage school student vaccination drives, developed using **React (frontend)** and **Spring Boot (backend)**.
 
-## Available Scripts
+This portal allows the school coordinator to:
+- Add/edit/search students
+- Schedule and track vaccination drives
+- Monitor vaccination status
+- View analytics and generate reports
+- Upload and export data via CSV
+- Simulated Admin login 
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+### 🔐 Authentication (Simulated)
+- Hardcoded login (username: `admin`, password: `admin123`)
+- JWT Token based support
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 👩‍🎓 Student Management
+- Add individual students
+- Bulk upload via CSV
+- Search/filter student records
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 💉 Vaccination Drives
+- Create/edit drives (with validation)
+- Date must be 15+ days from today
+- Filter by applicable classes
 
-### `npm test`
+### ✅ Vaccination Status
+- Mark students as vaccinated (only once per vaccine)
+- Track drive and vaccine name
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📊 Dashboard
+- Total students
+- Vaccinated count and %
+- Drives scheduled in the next 30 days
 
-### `npm run build`
+### 📄 Reports
+- View full vaccination history
+- Downloadable as CSV, PDF, Excel
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Frontend               | Backend              |
+|------------------------|----------------------|
+| React + React Router   | Java + Spring Boot   |
+| Fetch (API calls)      | Hibernate (ORM)      |
+| CSS (Theme Styling)    | PostgreSQL (Database)|
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Folder Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+Spring Boot App
+src/
+├── controller/
+├── dto/
+├── entity/
+├── repository/
+├── service/
+├── util/
+└── config/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+React App
+src/
+├── components/
+├── pages/
+├── services/
+├── context/
+└── App.jsx
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ✅ Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. Backend Setup (Flask)
+```bash
+   git clone https://github.com/mehrasamanyu1/Student-Vaccination-Portal-Backend.git
+   cd school-vaccination-backend
+```
 
-### Code Splitting
+### 2. Frontend Setup (React)
+```bash
+   git clone https://github.com/mehrasamanyu1/Student-Vaccination-Portal-Frontend.git
+   cd school-vaccination-frontend
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> Ensure React runs on `http://localhost:3000` by default
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 👤 Login Details (Simulated)
+- **Username:** `admin`
+- **Password:** `admin123`
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📷 Screenshots
 
-### Advanced Configuration
+> Include screenshots of:
+> - Dashboard
+> - Student page
+> - Drive form
+> - Reports table
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📦 Submission Notes
+- All 5 user stories implemented ✅
+- Full backend validations, CSV features ✅
+- Rich UI, reusable components, responsive design ✅
