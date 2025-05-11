@@ -1,4 +1,4 @@
-# 📘 School Vaccination Portal – FSAD Assignment 2024–25
+# 📘 School Vaccination Portal – FSAD Assignment 2025–26
 
 A full-stack web application to manage school student vaccination drives, developed using **React (frontend)** and **Spring Boot (backend)**.
 
